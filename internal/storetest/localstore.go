@@ -74,6 +74,7 @@ func initLocalStore(
 func getLocalServerModelAndTuples(
 	storeData *StoreData,
 	format authorizationmodel.ModelFormat,
+	serverConfig ServerConfig,
 ) (*server.Server, *authorizationmodel.AuthzModel, func(), error) {
 	var fgaServer *server.Server
 
@@ -86,11 +87,13 @@ func getLocalServerModelAndTuples(
 	}
 
 	// If we have at least one local test, initialize the local server
-	datastore := memory.New()
+	datastore := memory.New(serverConfig.MemoryOptions()...)
 
-	fgaServer, err := server.NewServerWithOpts(
+	serverOpts := append([]server.OpenFGAServiceV1Option{
 		server.WithDatastore(datastore),
-	)
+	}, serverConfig.ServerOptions()...)
+
+	fgaServer, err := server.NewServerWithOpts(serverOpts...)
 	if err != nil {
 		return nil, nil, stopServerFn, err //nolint:wrapcheck
 	}

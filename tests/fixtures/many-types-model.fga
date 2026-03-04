@@ -1,0 +1,441 @@
+model
+  schema 1.1
+
+type user
+
+type resource1
+  relations
+    define owner: [user]
+
+type resource2
+  relations
+    define owner: [user]
+
+type resource3
+  relations
+    define owner: [user]
+
+type resource4
+  relations
+    define owner: [user]
+
+type resource5
+  relations
+    define owner: [user]
+
+type resource6
+  relations
+    define owner: [user]
+
+type resource7
+  relations
+    define owner: [user]
+
+type resource8
+  relations
+    define owner: [user]
+
+type resource9
+  relations
+    define owner: [user]
+
+type resource10
+  relations
+    define owner: [user]
+
+type resource11
+  relations
+    define owner: [user]
+
+type resource12
+  relations
+    define owner: [user]
+
+type resource13
+  relations
+    define owner: [user]
+
+type resource14
+  relations
+    define owner: [user]
+
+type resource15
+  relations
+    define owner: [user]
+
+type resource16
+  relations
+    define owner: [user]
+
+type resource17
+  relations
+    define owner: [user]
+
+type resource18
+  relations
+    define owner: [user]
+
+type resource19
+  relations
+    define owner: [user]
+
+type resource20
+  relations
+    define owner: [user]
+
+type resource21
+  relations
+    define owner: [user]
+
+type resource22
+  relations
+    define owner: [user]
+
+type resource23
+  relations
+    define owner: [user]
+
+type resource24
+  relations
+    define owner: [user]
+
+type resource25
+  relations
+    define owner: [user]
+
+type resource26
+  relations
+    define owner: [user]
+
+type resource27
+  relations
+    define owner: [user]
+
+type resource28
+  relations
+    define owner: [user]
+
+type resource29
+  relations
+    define owner: [user]
+
+type resource30
+  relations
+    define owner: [user]
+
+type resource31
+  relations
+    define owner: [user]
+
+type resource32
+  relations
+    define owner: [user]
+
+type resource33
+  relations
+    define owner: [user]
+
+type resource34
+  relations
+    define owner: [user]
+
+type resource35
+  relations
+    define owner: [user]
+
+type resource36
+  relations
+    define owner: [user]
+
+type resource37
+  relations
+    define owner: [user]
+
+type resource38
+  relations
+    define owner: [user]
+
+type resource39
+  relations
+    define owner: [user]
+
+type resource40
+  relations
+    define owner: [user]
+
+type resource41
+  relations
+    define owner: [user]
+
+type resource42
+  relations
+    define owner: [user]
+
+type resource43
+  relations
+    define owner: [user]
+
+type resource44
+  relations
+    define owner: [user]
+
+type resource45
+  relations
+    define owner: [user]
+
+type resource46
+  relations
+    define owner: [user]
+
+type resource47
+  relations
+    define owner: [user]
+
+type resource48
+  relations
+    define owner: [user]
+
+type resource49
+  relations
+    define owner: [user]
+
+type resource50
+  relations
+    define owner: [user]
+
+type resource51
+  relations
+    define owner: [user]
+
+type resource52
+  relations
+    define owner: [user]
+
+type resource53
+  relations
+    define owner: [user]
+
+type resource54
+  relations
+    define owner: [user]
+
+type resource55
+  relations
+    define owner: [user]
+
+type resource56
+  relations
+    define owner: [user]
+
+type resource57
+  relations
+    define owner: [user]
+
+type resource58
+  relations
+    define owner: [user]
+
+type resource59
+  relations
+    define owner: [user]
+
+type resource60
+  relations
+    define owner: [user]
+
+type resource61
+  relations
+    define owner: [user]
+
+type resource62
+  relations
+    define owner: [user]
+
+type resource63
+  relations
+    define owner: [user]
+
+type resource64
+  relations
+    define owner: [user]
+
+type resource65
+  relations
+    define owner: [user]
+
+type resource66
+  relations
+    define owner: [user]
+
+type resource67
+  relations
+    define owner: [user]
+
+type resource68
+  relations
+    define owner: [user]
+
+type resource69
+  relations
+    define owner: [user]
+
+type resource70
+  relations
+    define owner: [user]
+
+type resource71
+  relations
+    define owner: [user]
+
+type resource72
+  relations
+    define owner: [user]
+
+type resource73
+  relations
+    define owner: [user]
+
+type resource74
+  relations
+    define owner: [user]
+
+type resource75
+  relations
+    define owner: [user]
+
+type resource76
+  relations
+    define owner: [user]
+
+type resource77
+  relations
+    define owner: [user]
+
+type resource78
+  relations
+    define owner: [user]
+
+type resource79
+  relations
+    define owner: [user]
+
+type resource80
+  relations
+    define owner: [user]
+
+type resource81
+  relations
+    define owner: [user]
+
+type resource82
+  relations
+    define owner: [user]
+
+type resource83
+  relations
+    define owner: [user]
+
+type resource84
+  relations
+    define owner: [user]
+
+type resource85
+  relations
+    define owner: [user]
+
+type resource86
+  relations
+    define owner: [user]
+
+type resource87
+  relations
+    define owner: [user]
+
+type resource88
+  relations
+    define owner: [user]
+
+type resource89
+  relations
+    define owner: [user]
+
+type resource90
+  relations
+    define owner: [user]
+
+type resource91
+  relations
+    define owner: [user]
+
+type resource92
+  relations
+    define owner: [user]
+
+type resource93
+  relations
+    define owner: [user]
+
+type resource94
+  relations
+    define owner: [user]
+
+type resource95
+  relations
+    define owner: [user]
+
+type resource96
+  relations
+    define owner: [user]
+
+type resource97
+  relations
+    define owner: [user]
+
+type resource98
+  relations
+    define owner: [user]
+
+type resource99
+  relations
+    define owner: [user]
+
+type resource100
+  relations
+    define owner: [user]
+
+type resource101
+  relations
+    define owner: [user]
+
+type resource102
+  relations
+    define owner: [user]
+
+type resource103
+  relations
+    define owner: [user]
+
+type resource104
+  relations
+    define owner: [user]
+
+type resource105
+  relations
+    define owner: [user]
+
+type resource106
+  relations
+    define owner: [user]
+
+type resource107
+  relations
+    define owner: [user]
+
+type resource108
+  relations
+    define owner: [user]
+
+type resource109
+  relations
+    define owner: [user]
+

@@ -37,6 +37,7 @@ func RunTests(
 	fgaClient *client.OpenFgaClient,
 	storeData *StoreData,
 	format authorizationmodel.ModelFormat,
+	serverConfig ServerConfig,
 ) (TestResults, error) {
 	testResults := TestResults{}
 
@@ -44,7 +45,7 @@ func RunTests(
 		return testResults, err
 	}
 
-	fgaServer, authModel, stopServerFn, err := getLocalServerModelAndTuples(storeData, format)
+	fgaServer, authModel, stopServerFn, err := getLocalServerModelAndTuples(storeData, format, serverConfig)
 	if err != nil {
 		return testResults, err
 	}

@@ -52,6 +52,16 @@ var modelTestCmd = &cobra.Command{
 			return fmt.Errorf("failed to get suppress-summary flag: %w", err)
 		}
 
+		serverConfigFile, err := cmd.Flags().GetString("server-config")
+		if err != nil {
+			return fmt.Errorf("failed to get server-config flag: %w", err)
+		}
+
+		serverConfig, err := storetest.ReadServerConfigFromFile(serverConfigFile)
+		if err != nil {
+			return fmt.Errorf("failed to load server config: %w", err)
+		}
+
 		fileNames, err := filepath.Glob(testsFileName)
 		if err != nil {
 			return fmt.Errorf("invalid tests pattern %s due to %w", testsFileName, err)
@@ -89,6 +99,7 @@ var modelTestCmd = &cobra.Command{
 				fgaClient,
 				storeData,
 				format,
+				serverConfig,
 			)
 			if err != nil {
 				return fmt.Errorf("error running tests for %s due to %w", file, err)
@@ -154,6 +165,8 @@ func init() {
 	modelTestCmd.Flags().String("tests", "", "Path or glob of YAML test files")
 	modelTestCmd.Flags().Bool("verbose", false, "Print verbose JSON output")
 	modelTestCmd.Flags().Bool("suppress-summary", false, "Suppress the plain text summary output")
+	modelTestCmd.Flags().String("server-config", "",
+		"Path to a YAML file with embedded server configuration (uses OpenFGA server config format)")
 
 	if err := modelTestCmd.MarkFlagRequired("tests"); err != nil {
 		fmt.Printf("error setting flag as required - %v: %v\n", "cmd/models/test", err)
